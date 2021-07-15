@@ -8,7 +8,7 @@ public class FileLowLevel {
 
 
 
-        try (InputStream fin= new FileInputStream("LoremIpsum.txt");
+/*        try (InputStream fin= new FileInputStream("LoremIpsum.txt");
         OutputStream fout = new FileOutputStream( "LoremIpsum.txt"))
 
         {
@@ -19,11 +19,11 @@ public class FileLowLevel {
             {
                 fout.write(c);
             }
-        }catch(FileNotFoundException){
+        }catch(FileNotFoundException){*/
 
         }
 //        fin.close();
 //        fout.close();
 
     }
-}
+

@@ -32,14 +32,7 @@
   OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 -->
 
-<?import javafx.scene.control.CheckBox?>
-<?import javafx.scene.layout.StackPane?>
-<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.control.ListView?>
 
 
-<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
-   <children>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cbcccd" height="186.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="112.0" />
-      <CheckBox alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="36.0" prefWidth="95.0" text="Hi fertig" />
-   </children>
-</StackPane>
+<ListView fx:id="lsvPersons" prefHeight="297.0" prefWidth="318.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" />

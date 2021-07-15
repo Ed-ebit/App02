@@ -14,6 +14,7 @@ import javafx.scene.control.TextField;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import java.util.function.Predicate;
 
 import static javafx.beans.binding.Bindings.isNull;
 
@@ -44,7 +45,10 @@ public class Controller implements Initializable {
         nameList.setItems(entries);
 
 
+        }
+
+
 
     }
-}
+
 

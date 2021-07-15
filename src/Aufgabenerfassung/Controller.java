@@ -5,9 +5,9 @@ import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
+import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.GridPane;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -19,6 +19,9 @@ public class Controller implements Initializable {
 
 
     @FXML
+    private GridPane checkBox;
+
+    @FXML
     private TextField ausfuehrenderFeld;
 
     @FXML
@@ -28,17 +31,65 @@ public class Controller implements Initializable {
     private ComboBox<String> comboBox;
 
     @FXML
+    private ToggleGroup tggTarget;
+
+    @FXML
     private Button btnSpeichern;
 
     @FXML
     private TextField ausgabeFeld;
 
     @FXML
+    private RadioButton btnMutter;
+
+    @FXML
+    private RadioButton btnVater;
+
+    @FXML
+    private RadioButton btnTochter;
+
+    @FXML
+    private RadioButton btnSohn;
+
+    @FXML
+    private CheckBox checkbox;
+
+    @FXML
+    void checkboxClicked(ActionEvent event) {
+
+    }
+
+    @FXML
+    void checkboxcClicked(MouseEvent event) {
+
+    }
+
+    @FXML
+    void clickbtnMutter(ActionEvent event) {
+
+    }
+
+    @FXML
+    void clickbtnSohn(ActionEvent event) {
+
+    }
+
+    @FXML
+    void clickbtnTochter(ActionEvent event) {
+
+    }
+
+    @FXML
+    void clickbtnVater(ActionEvent event) {
+
+    }
+
+    @FXML
     void onspeichern(ActionEvent event) {
         StringBuilder sb =new StringBuilder ("Aufgabe").append("\n============");
         sb.append(aufgabenFeld.getText()).append("\n");
         sb.append(comboBox.getSelectionModel().getSelectedItem()).append("\"");
-        ausgabeFeld.setText(sb.toString());
+       // sb.append(checkboxClicked.isSelected()) ) "Alle anzeigen" : "keine anzeigen");
     }
 
 
@@ -47,6 +98,7 @@ public class Controller implements Initializable {
         comboBox.setItems(entries);
 
         comboBox.getSelectionModel().selectLast();
+        var toggleTarget = tggTarget.getToggles();
 
     }
 }
